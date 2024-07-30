@@ -1,0 +1,19 @@
+[toolchain]
+
+[features]
+seeds = false
+skip-lint = false
+
+[programs.mainnet]
+ft_staking = "9U758LJTVUhixPfXLXCjdZJXFPgzrRmRj9euKUbrve6F"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "mainnet"
+# wallet = "/root/.config/solana/id.json"
+wallet = "/root/.config/solana/wallet.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
